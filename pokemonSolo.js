@@ -37,7 +37,7 @@ function mostrarPokemon(dataPokemon){
             <p class="medida">Medida:${dataPokemon.height/10}m</p>
             <p class="tipo">tipo:</p>
             ${tipos}
-            <p class="stats">Estadisticas nivel 1</p>
+            <p class="stats">Estadisticas nivel 1:</p>
             ${stats}
             <p class="habilidades">Habilidades: <span>${abilities}</span></p>
     </div>
