@@ -1,0 +1,230 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ff3e3e;
+    margin-top: 20px;
+}
+
+/* Contenedor principal */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+/* Tarjeta individual */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.nombre {
+    font-size: 2rem;
+    color: #ff3e3e;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Secciones de información con nuevos colores */
+.id {
+    background-color: red; /* Coral pastel */
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px auto;
+    width: 80%;
+    font-weight: bold;
+}
+
+.peso {
+    background-color: red; /* Amarillo pastel */
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px auto;
+    width: 80%;
+    font-weight: bold;
+}
+
+.medida {
+    background-color: red; /* Verde pastel */
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px auto;
+    width: 80%;
+    font-weight: bold;
+}
+
+/* Estilos para Tipo y Habilidades */
+.tipo, .habilidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px; /* Espacio entre los elementos */
+    margin-top: 10px;
+}
+.tipo, .habilidades{
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bug, .dark, .fire, .normal, .water, .grass, .electric, .fighting, .poison, .ground, .flying, .psychic, .ice, .rock, .ghost, .dragon, .steel, .fairy{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 100vmax;
+    padding-block: 5px;
+    text-decoration: none;
+    width: 80%;
+    margin: 0 auto;
+    padding-block: 5px;
+    margin-block: 10px;
+}
+.bug{
+    background-color: #A9B827;
+    color:black;
+}
+.dark{
+    background-color: #6F5847;
+    color:white;
+}
+.fire{
+    background-color: #F07E31;
+    color:black;
+}
+.normal{
+    background-color:#A6A87C;
+    color:black;
+}
+.water{
+    background-color: #6891F0;
+    color:white;
+}
+.grass{
+    background-color: #79C84F;
+    color:black;
+}
+.electric{
+    background-color:#F7CF2F;
+    color:black;
+}
+.ice{
+    background-color: #99D9D9;
+    color: black;
+}
+.fighting{
+    background-color:#C32F28 ;
+    color:white;
+}
+.poison{
+    background-color: #A340A4;
+    color:white;
+}
+.ground{
+    background-color:#DFBE66;
+    color:black;
+}
+.flying{
+    background-color: #AC8DF3;
+    color:black;
+}
+.psychic{
+    background-color: #F75988;
+    color:black;
+}
+.rock{
+    background-color:#BA9F34;
+    color:black;
+}
+.ghost{
+    background-color:#705897;
+    color:white;
+}
+.dark{
+    background-color: #705847;
+    color:white;
+}
+.dragon{
+    background-color: #7536FB;
+    color:white;
+}
+.steel{
+    background-color: #C4C2D2;
+    color:black;
+}
+.fairy{
+    background-color: #F2B7BD;
+    color:black;
+}
+
+.habilidades span {
+    background-color: #577590; /* Azul suave */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* Botón Volver */
+a {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: none;
+    color: white;
+    background-color: #ff3e3e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 200px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #cc3232;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    .card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nombre {
+        font-size: 1.5rem;
+    }
+}

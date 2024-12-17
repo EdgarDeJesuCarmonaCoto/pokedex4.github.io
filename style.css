@@ -1,0 +1,315 @@
+/* Estilos globales */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+/*tipos*/
+.bug, .dark, .fire, .normal, .water, .grass, .electric, .fighting, .poison, .ground, .flying, .psychic, .ice, .rock, .ghost, .dragon, .steel, .fairy, .todos{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 100vmax;
+    padding-block: 5px;
+    text-decoration: none;
+}
+.bug{
+    background-color: #A9B827;
+    color:black;
+}
+.dark{
+    background-color: #6F5847;
+    color:white;
+}
+.fire{
+    background-color: #F07E31;
+    color:black;
+}
+.normal{
+    background-color:#A6A87C;
+    color:black;
+}
+.water{
+    background-color: #6891F0;
+    color:white;
+}
+.grass{
+    background-color: #79C84F;
+    color:black;
+}
+.electric{
+    background-color:#F7CF2F;
+    color:black;
+}
+.ice{
+    background-color: #99D9D9;
+    color: black;
+}
+.fighting{
+    background-color:#C32F28 ;
+    color:white;
+}
+.poison{
+    background-color: #A340A4;
+    color:white;
+}
+.ground{
+    background-color:#DFBE66;
+    color:black;
+}
+.flying{
+    background-color: #AC8DF3;
+    color:black;
+}
+.psychic{
+    background-color: #F75988;
+    color:black;
+}
+.rock{
+    background-color:#BA9F34;
+    color:black;
+}
+.ghost{
+    background-color:#705897;
+    color:white;
+}
+.dark{
+    background-color: #705847;
+    color:white;
+}
+.dragon{
+    background-color: #7536FB;
+    color:white;
+}
+.steel{
+    background-color: #C4C2D2;
+    color:black;
+}
+.fairy{
+    background-color: #F2B7BD;
+    color:black;
+}
+.todos{
+    background-color: red;
+    color:white;
+}
+.navbar{
+    position: relative;
+    z-index: 1000;
+}
+/* Navbar General */
+.navbar-list{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 2dvi;
+    justify-content: center;
+    box-shadow: 0 0 8px black;
+}
+
+.navbar-btn{
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    width: 100px;
+}
+.navbar-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px black;
+}
+
+/* Menu Hamburguesa */
+.menu-toggle {
+    display: none; /* Ocultar por defecto en pantallas grandes */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition:all 0.3s;
+}
+
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #ff3e3e;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+/* Estilos del buscador */
+.input {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.input input {
+    padding: 10px;
+    width: 250px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.input button {
+    padding: 10px;
+    background-color: #ff3e3e;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input button:hover {
+    background-color: #cc3232;
+}
+
+/* Contenedor de las cartas */
+.cards {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Diseño de la tarjeta */
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+}
+
+.nombre {
+    font-size: 1.5rem;
+    color: #ff3e3e;
+}
+
+.id{
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color:black;
+    font-weight: bold;
+}
+.tipo{
+    background-color: orange;
+    border-radius: 100vmax;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-block: 5px;
+}
+
+.error {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #ff4c4c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #ff3e3e;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #cc3232;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #a12b2b;
+}
+
+/* Responsividad */
+
+@media screen and (max-width: 768px) {
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 10;
+        box-shadow: 0 0 7px black;
+    }
+
+    .navbar-list.active {
+        display: flex; /* Mostrar lista al activar */
+    }
+    .navbar-btn{
+        width: 100px;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar botón hamburguesa */
+        margin: 10px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar">
+        <button class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Ícono de hamburguesa -->
+        </button>
+        <ul class="navbar-list" id="navbar-list">
+            <li><button class="navbar-btn todos" id="todos" onclick="filtrarPorTipo('')">Ver todos</button></li>
+            <li><button class="navbar-btn bug" id="bug" onclick="filtrarPorTipo('bug')">Bug</button></li>
+            <li><button class="navbar-btn dark" id="dark" onclick="filtrarPorTipo('dark')">Dark</button></li>
+            <li><button class="navbar-btn dragon" id="dragon" onclick="filtrarPorTipo('dragon')">Dragon</button></li>
+            <li><button class="navbar-btn electric" id="electric" onclick="filtrarPorTipo('electric')">Electric</button></li>
+            <li><button class="navbar-btn fairy" id="fairy" onclick="filtrarPorTipo('fairy')">Fairy</button></li>
+            <li><button class="navbar-btn fighting" id="fighting" onclick="filtrarPorTipo('fighting')">Fighting</button></li>
+            <li><button class="navbar-btn fire" id="fire" onclick="filtrarPorTipo('fire')">Fire</button></li>
+            <li><button class="navbar-btn flying" id="flying" onclick="filtrarPorTipo('flying')">Flying</button></li>
+            <li><button class="navbar-btn ghost" id="ghost" onclick="filtrarPorTipo('ghost')">Ghost</button></li>
+            <li><button class="navbar-btn grass" id="grass" onclick="filtrarPorTipo('grass')">Grass</button></li>
+            <li><button class="navbar-btn ground" id="ground" onclick="filtrarPorTipo('ground')">Ground</button></li>
+            <li><button class="navbar-btn ice" id="ice" onclick="filtrarPorTipo('ice')">Ice</button></li>
+            <li><button class="navbar-btn normal" id="normal" onclick="filtrarPorTipo('normal')">Normal</button></li>
+            <li><button class="navbar-btn poison" id="poison" onclick="filtrarPorTipo('poison')">Poison</button></li>
+            <li><button class="navbar-btn psychic" id="psychic" onclick="filtrarPorTipo('psychic')">Psychic</button></li>
+            <li><button class="navbar-btn rock" id="rock" onclick="filtrarPorTipo('rock')">Rock</button></li>
+            <li><button class="navbar-btn steel" id="steel" onclick="filtrarPorTipo('steel')">Steel</button></li>
+            <li><button class="navbar-btn water" id="water" onclick="filtrarPorTipo('water')">Water</button></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <h1>POKÉDEX</h1>
+    <div class="input">
+        <input type="text" placeholder="Numero o nombre del pokemon" id="pokemonInput">
+        <button onclick="buscarPokemonConInput()">Buscar pokemon</button>
+    </div>
+    <div class="cards" id="carta">
+        
+    </div>
+    <div class="footer" id="footer"> 
+
+    </div>
+    <script src="main.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
