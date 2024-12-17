@@ -6,20 +6,20 @@ const nav=document.querySelectorAll(".navbar-btn")
 const navbarList= document.getElementById("navbar-list");
 
 function filtrarPorTipo(tipo) {
-    value1 = 1;  // Resetear paginación
+    value1 = 1;  
     value2 = 20;
-    card.innerHTML = ''; // Limpiar la carta
-    footer.innerHTML = ''; // Limpiar el pie de página
+    card.innerHTML = ''; 
+    footer.innerHTML = ''; 
     if (tipo === '') {
-        buscarPokemon(); // Si no se pasa tipo, cargar todos los pokémones
+        buscarPokemon(); 
     } else {
-        obtenerPokemonPorTipo(tipo); // Filtrar por tipo
+        obtenerPokemonPorTipo(tipo); 
     }
     cerrarMenuResponsive();
 }
 
 function cerrarMenuResponsive() {
-    navbarList.classList.remove("active"); // Elimina la clase active para cerrar el menú
+    navbarList.classList.remove("active"); 
 }
 
 function buscarPokemon(){
@@ -91,6 +91,7 @@ function mostraPokemonSolo(dataPokemon,position){
 function mostrarPokemon(dataPokemon,position){
     let tipos=dataPokemon.types.map(index=>`<p class="${index.type.name}">${index.type.name}</p>`);
     tipos=tipos.join("");
+
     card.innerHTML+=`
     <a href="pokemonSolo.html?id=${position}" class="card">
     <div class="content">
